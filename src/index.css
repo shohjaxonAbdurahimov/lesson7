@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+    .align-element {
+      @apply max-w-5xl mx-auto px-4;
+    }
+  }
+  @layer {
+   .active {
+      @apply bg-primary text-slate-200 ;
+    }
+  }
+  .form-container{
+    width: 100%;
+    max-width:300px ;
+    margin: 0 auto ;
+    padding-top: 20px;
+  }
+  .form-control{
+    display: block;
+    margin-bottom: 1rem;
+  }
+  .form-control span{
+    display: block;
+    margin-bottom: 10px;  }
+    .form-control input , textarea{
+      padding: 3px 8px;
+      font-family: inherit;
+      width: 100%;
+      resize: none;
+      font-size: 20px;
+
+    }
+    .button{
+      background: green;
+      border: 0;
+      padding: 8px 15px;
+      color: #fff;
+      cursor: pointer;
+      display: block;
+      width: 100%;
+  
+    }
+    .button:hover{
+      background: rgb(6, 48, 6);
+    }
+    .PageNotFound-container{
+      text-align: center;
+    }
+    .PageNotFound-container p{
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      width: 1000px;
+      height: 300px;
+    }
+    .PageNotFound-container a{
+      text-decoration: none;
+      color: #333;
+      border: 2px solid #333;
+      background-color: #fff;
+    
+    }
+    .PageNotFound-container a:hover{
+      background-color: #333;
+      color: #fff;
+    }
+    .articles-container {
+margin-top: 30px;
+    }
+    .articles-container .card{
+
+padding: 20px;
+border: 1px solid #e4e4e4e4;
+border-radius: 4px;
+box-shadow: 4px 4px 6px rgb(0,0,0,0.05);
+margin-bottom: 20px;
+    }
+ 
+     .buttonred{
+      color: rgb(23, 18, 18);
+      width: 120px;
+      font-weight: 600;
+      height: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5px;
+      border-radius: 5px;
+      font-size: small;
+      background-color: indianred;
+    }
+    img{
+      width: 100%;
+      object-fit: cover;
+    }
+    .breadCrumbs{
+      max-width: 1200px;
+      margin: 20px auto;
+    }
+    .breadCrumbs > *{
+      display: inline-block;
+      margin-right: 10px;
+
+    }
+    .breadCrumbs .crumb::after{
+      content: ">";
+      margin-left: 10px;
+
+    }
+    .breadCrumbs:last-child:after{
+      display: none;
+    }
+    .breadCrumbs .crum a{
+      color: #ddd;
+    }
